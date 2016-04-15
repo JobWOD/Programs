@@ -4,16 +4,16 @@ def Primos (a):
 	for i in range (2,a):
 		if a % i == 0:
 			return False
-		else:
-			return True
+	return True
 
-
-def PrimosR (a,b):
+def PrimosR (x,y):
 	c = 0
-	for i in range (a,b):
+	for i in range (x,y):
 		if Primos(i) == True:
-			c += 1
+			c = c + 1
+			print i
 	return c
 
-
-print PrimosR (0,1000)
+c = PrimosR(0,1000)
+print PrimosR(0,1000)
+print "hay", c , "numeros primos entre 0 y 1000"
