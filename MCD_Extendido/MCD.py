@@ -10,7 +10,7 @@ def MCDExt(a,b):
         x = x + [x[i-1] - q[i]*x[i]]
         y = y + [y[i-1] - q[i]*y[i]]
         i = i+1
-    return (v[i-1], x[i-1], y[i-1])
+    return (v[i-1])
 
 mcd = MCDExt(1547,560)
 print mcd
